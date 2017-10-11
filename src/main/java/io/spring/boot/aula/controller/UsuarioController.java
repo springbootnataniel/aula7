@@ -33,7 +33,7 @@ public class UsuarioController {
     
     @RequestMapping(value = "/usuario/{nome}/like", method = RequestMethod.GET)
     public List<Usuario> listLike(@PathVariable String nome) {
-        return repository.findByNomeLikeIgnoreCase();
+        return repository.findByNomeMeioLikeIgnoreCase();
     }
     
     @RequestMapping(value = "/usuario/{nome}/full-text-search", method = RequestMethod.GET)
