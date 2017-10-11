@@ -1,7 +1,7 @@
-# Aula 4
+# Aula 7
 
-* Criar uma conexão com o MongoDB
-* Criar o banco de dados no Mlab
-* Criar nossa Interface do Spring Data Repositories
-* CRUD em poucos minutos
+* Usar queries com like
+* Full text search
+* Auditoria automática usando o Spring
+
 
