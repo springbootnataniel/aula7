@@ -14,8 +14,6 @@ import org.springframework.data.mongodb.core.mapping.TextScore;
  */
 public class Usuario extends EntidadeGenerica {
 
-    private String nomeMeio;
-
     @TextIndexed
     private String nome;
 
@@ -27,14 +25,6 @@ public class Usuario extends EntidadeGenerica {
 
     public String getNome() {
         return nome;
-    }
-
-    public String getNomeMeio() {
-        return nomeMeio;
-    }
-
-    public void setNomeMeio(String nomeMeio) {
-        this.nomeMeio = nomeMeio;
     }
 
     public void setNome(String nome) {

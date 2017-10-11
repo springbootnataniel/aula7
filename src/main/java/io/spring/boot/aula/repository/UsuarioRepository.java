@@ -12,9 +12,8 @@ import org.springframework.data.mongodb.repository.MongoRepository;
  */
 public interface UsuarioRepository extends MongoRepository<Usuario, String> {
 
-
     public List<Usuario> findAllBy(TextCriteria criteria, Pageable pages);
 
-    public List<Usuario> findByNomeMeioLikeIgnoreCase();
+    public List<Usuario> findByNomeLikeIgnoreCase(String nome);
     
 }
